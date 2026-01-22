@@ -20,10 +20,10 @@
 
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/optimization.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -233,6 +233,29 @@
       </div>
     </section>
 
+    <!--  About Us Summary Section -->
+    <section class="py-10 py-lg-12 py-xl-13 bg-light-subtle" id="about-summary">
+      <div class="container position-relative z-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <span class="badge bg-white text-dark mb-3">WHO WE ARE</span>
+            <h2 class="mb-4">Software That <em class="font-instrument">Thinks</em></h2>
+            <p class="fs-5 text-muted mb-5">
+              ByteWeave.studio is an AI-first software studio building intelligent, production-ready digital systems.
+              We combine computer vision, AI/LLMs, and full-stack engineering to help businesses unlock the value of
+              their
+              data.
+            </p>
+            <a href="about.html" class="btn btn-dark">
+              <span class="btn-text">Read More About Us</span>
+              <iconify-icon icon="solar:arrow-right-up-linear"
+                class="btn-icon bg-white text-dark round-32 rounded-circle hstack justify-content-center fs-6"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--  Innovation Meets Section -->
     <section class="innovation-meets py-10 py-lg-12 py-xl-13" id="services">
       <div class="container">
@@ -396,10 +419,11 @@
             </div>
           </div>
 
-          <div class="row g-4">
+          <!-- Owl Carousel -->
+          <div class="owl-carousel testimonial-carousel owl-theme">
             <!-- Testimonial 1 -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-              <div class="card h-100 border-0 shadow-sm card-accent-primary">
+            <div class="item">
+              <div class="card h-100 border border-dark shadow-sm card-accent-primary">
                 <div class="card-body p-4 p-lg-5">
                   <div class="d-flex flex-column gap-4">
                     <iconify-icon icon="solar:quote-up-square-bold" class="fs-9 text-primary opacity-50"></iconify-icon>
@@ -409,8 +433,8 @@
                       every day."
                     </p>
                     <div class="d-flex align-items-center gap-3 pt-2">
-                      <div class="rounded-circle bg-primary-subtle d-flex align-items-center justify-content-center"
-                        style="width: 48px; height: 48px;">
+                      <div
+                        class="rounded-circle bg-primary-subtle d-flex align-items-center justify-content-center avatar-circle">
                         <span class="fw-semibold text-primary">KS</span>
                       </div>
                       <div>
@@ -424,8 +448,8 @@
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-              <div class="card h-100 border-0 shadow-sm card-accent-info">
+            <div class="item">
+              <div class="card h-100 border border-dark shadow-sm card-accent-info">
                 <div class="card-body p-4 p-lg-5">
                   <div class="d-flex flex-column gap-4">
                     <iconify-icon icon="solar:quote-up-square-bold" class="fs-9 text-info opacity-50"></iconify-icon>
@@ -434,13 +458,64 @@
                       attention to detail made the entire development process smooth and efficient."
                     </p>
                     <div class="d-flex align-items-center gap-3 pt-2">
-                      <div class="rounded-circle bg-info-subtle d-flex align-items-center justify-content-center"
-                        style="width: 48px; height: 48px;">
+                      <div
+                        class="rounded-circle bg-info-subtle d-flex align-items-center justify-content-center avatar-circle">
                         <span class="fw-semibold text-info">AM</span>
                       </div>
                       <div>
                         <h6 class="mb-0">Ananya Mehta</h6>
                         <p class="mb-0 text-muted small">Product Lead</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="item">
+              <div class="card h-100 border border-dark shadow-sm card-accent-success">
+                <div class="card-body p-4 p-lg-5">
+                  <div class="d-flex flex-column gap-4">
+                    <iconify-icon icon="solar:quote-up-square-bold" class="fs-9 text-success opacity-50"></iconify-icon>
+                    <p class="fs-5 mb-0 text-dark lh-base">
+                      "We needed a mobile app that could integrate with our existing backend and AI services. ByteWeave
+                      delivered a polished, production-ready app that exceeded our expectations in both performance and
+                      design."
+                    </p>
+                    <div class="d-flex align-items-center gap-3 pt-2">
+                      <div
+                        class="rounded-circle bg-success-subtle d-flex align-items-center justify-content-center avatar-circle">
+                        <span class="fw-semibold text-success">RK</span>
+                      </div>
+                      <div>
+                        <h6 class="mb-0">Rajesh Kumar</h6>
+                        <p class="mb-0 text-muted small">CTO, TechVentures</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="item">
+              <div class="card h-100 border border-dark shadow-sm card-accent-warning">
+                <div class="card-body p-4 p-lg-5">
+                  <div class="d-flex flex-column gap-4">
+                    <iconify-icon icon="solar:quote-up-square-bold" class="fs-9 text-warning opacity-50"></iconify-icon>
+                    <p class="fs-5 mb-0 text-dark lh-base">
+                      "The computer vision solution ByteWeave built for us transformed our quality control process.
+                      We went from manual inspection to automated detection with 99% accuracy in just a few weeks."
+                    </p>
+                    <div class="d-flex align-items-center gap-3 pt-2">
+                      <div
+                        class="rounded-circle bg-warning-subtle d-flex align-items-center justify-content-center avatar-circle">
+                        <span class="fw-semibold text-warning">PS</span>
+                      </div>
+                      <div>
+                        <h6 class="mb-0">Priya Sharma</h6>
+                        <p class="mb-0 text-muted small">Operations Head, ManuTech</p>
                       </div>
                     </div>
                   </div>
@@ -462,11 +537,10 @@
             <div class="col-lg-8 col-xl-8">
               <div class="d-flex flex-column gap-3">
                 <div class="d-flex flex-column gap-7">
-                  <h2 class="mb-0 text-center">Innovative Solutions for <em class="font-instrument">Bold Brands</em>
+                  <h2 class="mb-0 text-center">Ready to Build Something <em class="font-instrument">Intelligent?</em>
                   </h2>
-                  <p class="text-dark mb-0 text-center">Looking to elevate your brand? We craft immersive experiences
-                    that
-                    captivate, engage, and make your business unforgettable in every interaction.</p>
+                  <p class="text-dark mb-0 text-center">Let's discuss how AI and computer vision can
+                    accelerate your business. We're here to execute, not just ideate.</p>
                 </div>
                 <a href="contact.html" class="btn btn-dark mx-auto">
                   <span class="btn-text">Let's Collaborate</span>
@@ -586,40 +660,13 @@
   </div>
 
 
-  <script src="./assets/libs/jquery/dist/jquery.min.js" defer></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="./assets/libs/owl.carousel/dist/owl.carousel.min.js" defer></script>
-  <script src="./assets/libs/aos-master/dist/aos.js" defer></script>
-  <script src="./assets/js/custom.js" defer></script>
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="./assets/libs/aos-master/dist/aos.js"></script>
+  <script src="./assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
-  <script>
-    new Swiper('.testimonial-swiper', {
-      loop: true,
-      spaceBetween: 24,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        992: {
-          slidesPerView: 2,
-        },
-      },
-    });
-  </script>
 </body>
 
 </html>

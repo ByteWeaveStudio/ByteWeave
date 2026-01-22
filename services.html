@@ -87,8 +87,8 @@
     <div class="page-wrapper overflow-hidden">
 
         <!-- Main Section - Introduction -->
-        <section class="pt-14 pt-md-15 pb-10 pb-lg-12" id="intro">
-            <div class="container">
+        <section class="pt-14 pt-md-15 pb-10 pb-lg-12 bg-gradient-shaph" id="intro">
+            <div class="container position-relative z-3">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="d-flex flex-column gap-5 text-center" data-aos="fade-up" data-aos-duration="1000">
@@ -118,19 +118,92 @@
                 </div>
 
                 <div class="row g-4">
-                    <!-- Web App Development -->
+                    <!-- 1. Computer Vision -->
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card h-100 border shadow-sm">
                             <div class="card-body d-flex flex-column gap-4 p-4">
-                                <div class="rounded-circle bg-secondary-subtle p-3 text-secondary d-inline-flex"
-                                    style="width: fit-content;">
+                                <div class="rounded-circle bg-info-subtle p-3 text-info d-inline-flex w-fit">
+                                    <iconify-icon icon="solar:gallery-wide-linear" class="fs-5"></iconify-icon>
+                                </div>
+                                <h4 class="mb-0">Computer Vision</h4>
+                                <p class="text-muted mb-0">Production-ready vision systems for object detection, quality
+                                    control, and visual analytics. Automate monitoring with custom models.</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                                    <li><span class="badge bg-light text-dark border">OCR</span></li>
+                                    <li><span class="badge bg-light text-dark border">Object Detection</span></li>
+                                    <li><span class="badge bg-light text-dark border">Video Analytics</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Doc Understanding -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="card h-100 border shadow-sm">
+                            <div class="card-body d-flex flex-column gap-4 p-4">
+                                <div class="rounded-circle bg-primary-subtle p-3 text-primary d-inline-flex w-fit">
+                                    <iconify-icon icon="solar:document-text-linear" class="fs-5"></iconify-icon>
+                                </div>
+                                <h4 class="mb-0">Doc Understanding</h4>
+                                <p class="text-muted mb-0">Automate data entry from invoices, receipts, and forms with
+                                    high-accuracy OCR. Extract structured data to eliminate manual bottlenecks.</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                                    <li><span class="badge bg-light text-dark border">OCR</span></li>
+                                    <li><span class="badge bg-light text-dark border">Data Extraction</span></li>
+                                    <li><span class="badge bg-light text-dark border">Automation</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. AI & LLM Integration -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="card h-100 border shadow-sm">
+                            <div class="card-body d-flex flex-column gap-4 p-4">
+                                <div class="rounded-circle bg-light-orange p-3 text-orange d-inline-flex w-fit">
+                                    <iconify-icon icon="solar:magic-stick-3-linear" class="fs-5"></iconify-icon>
+                                </div>
+                                <h4 class="mb-0">AI & LLM Integration</h4>
+                                <p class="text-muted mb-0">Intelligent assistants and knowledge retrieval powered by
+                                    LLMs. Automate complex decisions and enhance user interactions.</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                                    <li><span class="badge bg-light text-dark border">ChatGPT</span></li>
+                                    <li><span class="badge bg-light text-dark border">Gemini</span></li>
+                                    <li><span class="badge bg-light text-dark border">Custom Agents</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. ChatGPT AI Tools -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <div class="card h-100 border shadow-sm">
+                            <div class="card-body d-flex flex-column gap-4 p-4">
+                                <div class="rounded-circle bg-success-subtle p-3 text-success d-inline-flex w-fit">
+                                    <iconify-icon icon="solar:chat-square-code-linear" class="fs-5"></iconify-icon>
+                                </div>
+                                <h4 class="mb-0">ChatGPT AI Tools</h4>
+                                <p class="text-muted mb-0">Custom ChatGPT-powered tools to boost productivity and
+                                    content generation. Specialized agents that understand your data.</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                                    <li><span class="badge bg-light text-dark border">Productivity</span></li>
+                                    <li><span class="badge bg-light text-dark border">Agents</span></li>
+                                    <li><span class="badge bg-light text-dark border">GenAI</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Web Applications -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <div class="card h-100 border shadow-sm">
+                            <div class="card-body d-flex flex-column gap-4 p-4">
+                                <div class="rounded-circle bg-secondary-subtle p-3 text-secondary d-inline-flex w-fit">
                                     <iconify-icon icon="solar:window-frame-linear" class="fs-5"></iconify-icon>
                                 </div>
-                                <h4 class="mb-0">Web App Development</h4>
-                                <p class="text-muted mb-0">We build responsive, high-performance web applications using
-                                    modern frameworks like React, Next.js, and Node.js. From admin dashboards to
-                                    customer-facing platforms, our web apps are designed for speed, security, and
-                                    seamless user experience across all devices.</p>
+                                <h4 class="mb-0">Web Applications</h4>
+                                <p class="text-muted mb-0">Modern, responsive dashboards built with React and Next.js.
+                                    Fast, secure, and scalable web apps for your business.</p>
                                 <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
                                     <li><span class="badge bg-light text-dark border">React</span></li>
                                     <li><span class="badge bg-light text-dark border">Next.js</span></li>
@@ -141,111 +214,20 @@
                         </div>
                     </div>
 
-                    <!-- Computer Vision -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <!-- 6. Mobile Applications -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <div class="card h-100 border shadow-sm">
                             <div class="card-body d-flex flex-column gap-4 p-4">
-                                <div class="rounded-circle bg-info-subtle p-3 text-info d-inline-flex"
-                                    style="width: fit-content;">
-                                    <iconify-icon icon="solar:gallery-wide-linear" class="fs-5"></iconify-icon>
-                                </div>
-                                <h4 class="mb-0">Computer Vision</h4>
-                                <p class="text-muted mb-0">We develop production-ready computer vision systems for
-                                    document understanding, OCR pipelines, image classification, object detection, and
-                                    real-time video analytics. Our models are optimized for accuracy and designed to
-                                    integrate seamlessly with your existing workflows.</p>
-                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
-                                    <li><span class="badge bg-light text-dark border">OCR</span></li>
-                                    <li><span class="badge bg-light text-dark border">Object Detection</span></li>
-                                    <li><span class="badge bg-light text-dark border">Video Analytics</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- AI & LLM -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <div class="card h-100 border shadow-sm">
-                            <div class="card-body d-flex flex-column gap-4 p-4">
-                                <div class="rounded-circle bg-light-orange p-3 text-orange d-inline-flex"
-                                    style="width: fit-content;">
-                                    <iconify-icon icon="solar:magic-stick-3-linear" class="fs-5"></iconify-icon>
-                                </div>
-                                <h4 class="mb-0">AI & LLM Integration</h4>
-                                <p class="text-muted mb-0">We build intelligent systems powered by Large Language
-                                    Models. From conversational AI assistants to automated content generation and
-                                    data analysis tools, we help you leverage the latest in AI to automate tasks,
-                                    extract insights, and enhance productivity across your organization.</p>
-                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
-                                    <li><span class="badge bg-light text-dark border">ChatGPT</span></li>
-                                    <li><span class="badge bg-light text-dark border">Gemini</span></li>
-                                    <li><span class="badge bg-light text-dark border">Custom Agents</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Analytics & Reporting -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card h-100 border shadow-sm">
-                            <div class="card-body d-flex flex-column gap-4 p-4">
-                                <div class="rounded-circle bg-success-subtle p-3 text-success d-inline-flex"
-                                    style="width: fit-content;">
-                                    <iconify-icon icon="solar:chart-linear" class="fs-5"></iconify-icon>
-                                </div>
-                                <h4 class="mb-0">Analytics & Reporting</h4>
-                                <p class="text-muted mb-0">We create custom analytics dashboards and reporting systems
-                                    that transform raw data into actionable insights. Whether you need real-time
-                                    monitoring, historical trend analysis, or automated report generation, we build
-                                    tools that help you make data-driven decisions.</p>
-                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
-                                    <li><span class="badge bg-light text-dark border">Dashboards</span></li>
-                                    <li><span class="badge bg-light text-dark border">Data Visualization</span></li>
-                                    <li><span class="badge bg-light text-dark border">Reporting</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Apps -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="card h-100 border shadow-sm">
-                            <div class="card-body d-flex flex-column gap-4 p-4">
-                                <div class="rounded-circle bg-danger-subtle p-3 text-danger d-inline-flex"
-                                    style="width: fit-content;">
+                                <div class="rounded-circle bg-danger-subtle p-3 text-danger d-inline-flex w-fit">
                                     <iconify-icon icon="solar:smartphone-linear" class="fs-5"></iconify-icon>
                                 </div>
-                                <h4 class="mb-0">Mobile Apps</h4>
-                                <p class="text-muted mb-0">We develop native and cross-platform mobile applications for
-                                    iOS and Android. Using Flutter and React Native, we build apps that deliver smooth
-                                    performance, intuitive interfaces, and seamless integration with your backend
-                                    systems and AI capabilities.</p>
+                                <h4 class="mb-0">Mobile Applications</h4>
+                                <p class="text-muted mb-0">Cross-platform mobile apps for iOS and Android using Flutter
+                                    and React Native. Intuitive interfaces for your workforce and customers.</p>
                                 <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
                                     <li><span class="badge bg-light text-dark border">Flutter</span></li>
                                     <li><span class="badge bg-light text-dark border">React Native</span></li>
                                     <li><span class="badge bg-light text-dark border">iOS & Android</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Backend & Infrastructure -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                        <div class="card h-100 border shadow-sm">
-                            <div class="card-body d-flex flex-column gap-4 p-4">
-                                <div class="rounded-circle bg-primary-subtle p-3 text-primary d-inline-flex"
-                                    style="width: fit-content;">
-                                    <iconify-icon icon="solar:server-linear" class="fs-5"></iconify-icon>
-                                </div>
-                                <h4 class="mb-0">Backend & Infrastructure</h4>
-                                <p class="text-muted mb-0">We design and build robust backend systems and cloud
-                                    infrastructure to power your applications. From API development to database design,
-                                    authentication systems, and cloud deployment, we ensure your software runs reliably
-                                    at scale with proper security measures in place.</p>
-                                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
-                                    <li><span class="badge bg-light text-dark border">AWS</span></li>
-                                    <li><span class="badge bg-light text-dark border">GCP</span></li>
-                                    <li><span class="badge bg-light text-dark border">Docker</span></li>
                                 </ul>
                             </div>
                         </div>

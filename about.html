@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="shortcut icon" type="image/png" href="./assets/images/logos/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
     <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/libs/aos-master/dist/aos.css">
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -76,8 +76,8 @@
     <div class="page-wrapper overflow-hidden">
 
         <!-- About Content Section -->
-        <section class="pt-14 pt-md-15 pb-11 pb-lg-13 bg-light-subtle" id="about-content">
-            <div class="container">
+        <section class="pt-14 pt-md-15 pb-11 pb-lg-13 bg-gradient-shaph" id="about-content">
+            <div class="container position-relative z-3">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="pe-lg-5">
@@ -105,7 +105,9 @@
                     </div>
                     <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
                         <div class="row g-4">
-                            <div class="col-6">
+                            <!-- Left Column -->
+                            <div class="col-6 d-flex flex-column gap-4">
+                                <!-- Computer Vision Card -->
                                 <div class="card bg-secondary-subtle border-0 h-100">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:eye-scan-linear"
@@ -115,19 +117,7 @@
                                             intelligence</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card bg-info-subtle border-0 h-100">
-                                    <div class="card-body p-4">
-                                        <iconify-icon icon="solar:magic-stick-3-linear"
-                                            class="fs-8 text-info mb-3"></iconify-icon>
-                                        <h5 class="mb-2">AI & LLMs</h5>
-                                        <p class="text-muted small mb-0">Intelligent automation and language model
-                                            integration</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
+                                <!-- Full-Stack Dev Card -->
                                 <div class="card bg-light-orange border-0 h-100">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:code-square-linear"
@@ -138,7 +128,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+
+                            <!-- Right Column (Staggered on Desktop) -->
+                            <div class="col-6 d-flex flex-column gap-4 mt-0 mt-lg-5">
+                                <!-- AI & LLMs Card -->
+                                <div class="card bg-info-subtle border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <iconify-icon icon="solar:magic-stick-3-linear"
+                                            class="fs-8 text-info mb-3"></iconify-icon>
+                                        <h5 class="mb-2">AI & LLMs</h5>
+                                        <p class="text-muted small mb-0">Intelligent automation and language model
+                                            integration</p>
+                                    </div>
+                                </div>
+                                <!-- Mobile Apps Card -->
                                 <div class="card bg-success-subtle border-0 h-100">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:smartphone-linear"
@@ -156,128 +159,82 @@
         </section>
 
         <!-- What We've Built Section -->
-        <section class="py-11 py-lg-13" id="our-work">
+        <section class="py-10 py-lg-12 py-xl-13" id="our-work">
             <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-7 text-center">
-                        <span class="badge bg-info-subtle text-info mb-3" data-aos="fade-up">WHAT WE'VE BUILT</span>
-                        <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Real Systems. <em
-                                class="font-instrument">Real Impact.</em></h2>
-                        <p class="text-muted" data-aos="fade-up" data-aos-delay="200">All projects are built with
-                            scalability, accuracy, maintainability, and real user adoption.</p>
+                <div class="d-flex flex-column gap-10 gap-lg-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <h2 class="mb-0 text-center" data-aos="fade-up" data-aos-delay="100"
+                                data-aos-duration="1000">Real Systems. <em class="font-instrument">Real Impact.</em>
+                            </h2>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card border h-100 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-3 bg-secondary-subtle p-3 d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:document-text-linear"
-                                        class="fs-7 text-secondary"></iconify-icon>
-                                </div>
-                                <h5 class="mb-2">Document Understanding</h5>
-                                <p class="text-muted mb-3">Computer vision systems for processing and extracting data
-                                    from invoices, bank statements, and utility bills with high accuracy.</p>
-                                <div class="hstack gap-2 flex-wrap">
-                                    <span class="badge bg-light text-dark">OCR</span>
-                                    <span class="badge bg-light text-dark">Extraction</span>
-                                    <span class="badge bg-light text-dark">Automation</span>
+                    <div class="row g-4">
+                        <div class="col-lg-8 d-flex align-items-stretch">
+                            <div class="card position-relative w-100" data-aos="fade-up" data-aos-delay="100"
+                                data-aos-duration="1000"
+                                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 350px;">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-between gap-15 gap-lg-19 p-4 p-lg-5">
+                                    <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Document Intelligence</p>
+                                    <div class="d-flex flex-column gap-4">
+                                        <h3 class="mb-0 text-white">Computer vision systems for processing invoices,
+                                            bank statements, and utility bills with production-grade accuracy.</h3>
+                                        <div class="hstack gap-2 flex-wrap">
+                                            <span class="badge bg-light text-dark">OCR</span>
+                                            <span class="badge bg-light text-dark">Extraction</span>
+                                            <span class="badge bg-light text-dark">Automation</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card border h-100 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-3 bg-info-subtle p-3 d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:videocamera-record-linear"
-                                        class="fs-7 text-info"></iconify-icon>
-                                </div>
-                                <h5 class="mb-2">AI Store Monitoring</h5>
-                                <p class="text-muted mb-3">Real-time surveillance intelligence using live CCTV feeds to
-                                    monitor store activity, detect anomalies, and generate actionable insights.</p>
-                                <div class="hstack gap-2 flex-wrap">
-                                    <span class="badge bg-light text-dark">Live Feed</span>
-                                    <span class="badge bg-light text-dark">Detection</span>
-                                    <span class="badge bg-light text-dark">Alerts</span>
+                        <div class="col-lg-4 d-flex align-items-stretch">
+                            <div class="card bg-warning w-100" data-aos="fade-up" data-aos-delay="200"
+                                data-aos-duration="1000">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-between gap-14 gap-lg-18 p-4 p-lg-5">
+                                    <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Performance</p>
+                                    <div class="d-flex flex-column gap-1">
+                                        <h2 class="mb-0 fs-11">99%</h2>
+                                        <h3 class="mb-0">Document extraction accuracy achieved.</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card border h-100 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-3 bg-light-orange p-3 d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:square-academic-cap-linear"
-                                        class="fs-7 text-orange"></iconify-icon>
-                                </div>
-                                <h5 class="mb-2">Student Management Platform</h5>
-                                <p class="text-muted mb-3">AI-powered portal for student management, grading workflows,
-                                    and academic performance analytics with intuitive dashboards.</p>
-                                <div class="hstack gap-2 flex-wrap">
-                                    <span class="badge bg-light text-dark">Dashboard</span>
-                                    <span class="badge bg-light text-dark">Grading</span>
-                                    <span class="badge bg-light text-dark">Analytics</span>
+                        <div class="col-lg-4 d-flex align-items-stretch">
+                            <div class="card bg-dark w-100" data-aos="fade-up" data-aos-delay="300"
+                                data-aos-duration="1000">
+                                <div class="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                                    <div class="d-flex flex-column gap-4">
+                                        <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">AI Integration</p>
+                                        <h3 class="mb-0 text-white">Custom LLM-powered tools and agents deployed inside
+                                            ChatGPT for productivity and discovery workflows.</h3>
+                                    </div>
+                                    <div class="hstack gap-2 flex-wrap mt-auto">
+                                        <span class="badge bg-light text-dark">GPT</span>
+                                        <span class="badge bg-light text-dark">Agents</span>
+                                        <span class="badge bg-light text-dark">GenAI</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="card border h-100 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-3 bg-success-subtle p-3 d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:window-frame-linear"
-                                        class="fs-7 text-success"></iconify-icon>
-                                </div>
-                                <h5 class="mb-2">Web Applications</h5>
-                                <p class="text-muted mb-3">Modern dashboards, internal tools, and static marketing
-                                    websites built for performance, usability, and scale.</p>
-                                <div class="hstack gap-2 flex-wrap">
-                                    <span class="badge bg-light text-dark">React</span>
-                                    <span class="badge bg-light text-dark">Next.js</span>
-                                    <span class="badge bg-light text-dark">Node.js</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                        <div class="card border h-100 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-3 bg-danger-subtle p-3 d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:smartphone-2-linear"
-                                        class="fs-7 text-danger"></iconify-icon>
-                                </div>
-                                <h5 class="mb-2">Mobile Applications</h5>
-                                <p class="text-muted mb-3">Lightweight mobile apps focused on data rendering, user
-                                    workflows, and seamless integration with backend systems.</p>
-                                <div class="hstack gap-2 flex-wrap">
-                                    <span class="badge bg-light text-dark">Flutter</span>
-                                    <span class="badge bg-light text-dark">React Native</span>
-                                    <span class="badge bg-light text-dark">Cross-Platform</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card border h-100 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-3 bg-primary-subtle p-3 d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:chat-square-code-linear"
-                                        class="fs-7 text-primary"></iconify-icon>
-                                </div>
-                                <h5 class="mb-2">ChatGPT AI Tools</h5>
-                                <p class="text-muted mb-3">Custom AI tools launched inside ChatGPT, serving as discovery
-                                    and productivity entry points for various use cases.</p>
-                                <div class="hstack gap-2 flex-wrap">
-                                    <span class="badge bg-light text-dark">GPT</span>
-                                    <span class="badge bg-light text-dark">Productivity</span>
-                                    <span class="badge bg-light text-dark">Custom Tools</span>
+                        <div class="col-lg-8 d-flex align-items-stretch">
+                            <div class="card bg-light position-relative w-100" data-aos="fade-up" data-aos-delay="400"
+                                data-aos-duration="1000">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-between gap-14 gap-lg-15 p-4 p-lg-5">
+                                    <div class="d-flex flex-column gap-4">
+                                        <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Real-Time Intelligence
+                                        </p>
+                                        <h2 class="mb-0 fs-9">AI-powered store monitoring using live CCTV feeds for
+                                            activity detection, anomaly alerts, and actionable insights.</h2>
+                                    </div>
+                                    <div class="hstack gap-2 flex-wrap">
+                                        <span class="badge bg-dark text-white">Video Analytics</span>
+                                        <span class="badge bg-dark text-white">Detection</span>
+                                        <span class="badge bg-dark text-white">Alerts</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

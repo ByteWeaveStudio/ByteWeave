@@ -40,22 +40,46 @@ $(function () {
         });
     }
 
-    const btn = document.getElementById("scrollToTopBtn");
-    btn.addEventListener("click", scrollToTop);
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (scrollToTopBtn) {
+        scrollToTopBtn.addEventListener("click", scrollToTop);
 
-    window.onscroll = function () {
-        const btn = document.getElementById("scrollToTopBtn");
-        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-            btn.style.display = "flex";
-        } else {
-            btn.style.display = "none";
-        }
-    };
+        window.addEventListener('scroll', function () {
+            if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                scrollToTopBtn.style.display = "flex";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+    }
 
 
     // Aos
     AOS.init({
         once: true,
     });
-});
 
+    // Testimonial Owl Carousel
+    $('.testimonial-carousel').owlCarousel({
+        loop: true,
+        rewind: false,
+        margin: 24,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 800,
+        smartSpeed: 800,
+        slideBy: 1,
+        dotsEach: 1,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            992: {
+                items: 2
+            }
+        }
+    });
+});

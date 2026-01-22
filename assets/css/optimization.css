@@ -214,3 +214,56 @@
 .card-accent-info {
     border-left: 4px solid var(--bs-info) !important;
 }
+
+/* =========================================
+   Owl Carousel Testimonial Styles
+   ========================================= */
+
+   .testimonial-carousel .owl-stage {
+    display: flex;
+}
+
+.testimonial-carousel .owl-item {
+    display: flex;
+}
+
+.testimonial-carousel .item {
+    display: flex;
+    width: 100%;
+}
+
+.testimonial-carousel .item>.card {
+    width: 100%;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.testimonial-carousel .owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #dee2e6;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: background 0.3s ease;
+}
+
+.testimonial-carousel .owl-dot.active span {
+    background: var(--bs-primary);
+}
+
+/* =========================================
+   Utility Classes (replacing inline styles)
+   ========================================= */
+
+.avatar-circle {
+    width: 48px;
+    height: 48px;
+}
+
+.w-fit {
+    width: fit-content;
+}
