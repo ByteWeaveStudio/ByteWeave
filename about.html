@@ -104,11 +104,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="row g-4">
+                        <div class="row g-4 align-items-start">
                             <!-- Left Column -->
-                            <div class="col-6 d-flex flex-column gap-4">
+                            <div class="col-6 d-flex flex-column gap-4 about-stagger-left">
                                 <!-- Computer Vision Card -->
-                                <div class="card bg-secondary-subtle border-0 h-100">
+                                <div class="card bg-secondary-subtle border-0 h-100 about-feature-card">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:eye-scan-linear"
                                             class="fs-8 text-secondary mb-3"></iconify-icon>
@@ -118,7 +118,7 @@
                                     </div>
                                 </div>
                                 <!-- Full-Stack Dev Card -->
-                                <div class="card bg-light-orange border-0 h-100">
+                                <div class="card bg-light-orange border-0 h-100 about-feature-card">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:code-square-linear"
                                             class="fs-8 text-orange mb-3"></iconify-icon>
@@ -130,9 +130,9 @@
                             </div>
 
                             <!-- Right Column (Staggered on Desktop) -->
-                            <div class="col-6 d-flex flex-column gap-4 mt-0 mt-lg-5">
+                            <div class="col-6 d-flex flex-column gap-4 about-stagger-right">
                                 <!-- AI & LLMs Card -->
-                                <div class="card bg-info-subtle border-0 h-100">
+                                <div class="card bg-info-subtle border-0 h-100 about-feature-card">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:magic-stick-3-linear"
                                             class="fs-8 text-info mb-3"></iconify-icon>
@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                                 <!-- Mobile Apps Card -->
-                                <div class="card bg-success-subtle border-0 h-100">
+                                <div class="card bg-success-subtle border-0 h-100 about-feature-card">
                                     <div class="card-body p-4">
                                         <iconify-icon icon="solar:smartphone-linear"
                                             class="fs-8 text-success mb-3"></iconify-icon>
@@ -171,12 +171,18 @@
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-8 d-flex align-items-stretch">
-                            <div class="card position-relative w-100" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000"
+                            <div class="card position-relative overflow-hidden w-100" data-aos="fade-up"
+                                data-aos-delay="100" data-aos-duration="1000"
                                 style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 350px;">
+                                <img src="./assets/images/about/doc-intel.png" alt="Document Intelligence"
+                                    class="position-absolute top-0 end-0 opacity-25 about-card-img-masked"
+                                    loading="lazy">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-between gap-15 gap-lg-19 p-4 p-lg-5">
-                                    <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Document Intelligence</p>
+                                    class="card-body d-flex flex-column justify-content-between gap-15 gap-lg-19 p-4 p-lg-5 position-relative z-1">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Document Intelligence
+                                        </p>
+                                    </div>
                                     <div class="d-flex flex-column gap-4">
                                         <h3 class="mb-0 text-white">Computer vision systems for processing invoices,
                                             bank statements, and utility bills with production-grade accuracy.</h3>
@@ -190,10 +196,13 @@
                             </div>
                         </div>
                         <div class="col-lg-4 d-flex align-items-stretch">
-                            <div class="card bg-warning w-100" data-aos="fade-up" data-aos-delay="200"
-                                data-aos-duration="1000">
+                            <div class="card bg-warning position-relative overflow-hidden w-100" data-aos="fade-up"
+                                data-aos-delay="200" data-aos-duration="1000">
+                                <img src="./assets/images/about/performance.png" alt="Performance"
+                                    class="position-absolute top-0 start-0 w-100 h-100 opacity-50 about-card-img-full"
+                                    loading="lazy">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-between gap-14 gap-lg-18 p-4 p-lg-5">
+                                    class="card-body d-flex flex-column justify-content-between gap-14 gap-lg-18 p-4 p-lg-5 position-relative z-1">
                                     <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Performance</p>
                                     <div class="d-flex flex-column gap-1">
                                         <h2 class="mb-0 fs-11">99%</h2>
@@ -203,9 +212,12 @@
                             </div>
                         </div>
                         <div class="col-lg-4 d-flex align-items-stretch">
-                            <div class="card bg-dark w-100" data-aos="fade-up" data-aos-delay="300"
-                                data-aos-duration="1000">
-                                <div class="card-body d-flex flex-column gap-4 p-4 p-lg-5">
+                            <div class="card bg-dark position-relative overflow-hidden w-100" data-aos="fade-up"
+                                data-aos-delay="300" data-aos-duration="1000">
+                                <img src="./assets/images/about/ai-integration.png" alt="AI Integration"
+                                    class="position-absolute top-0 start-0 w-100 h-100 opacity-25 about-card-img-full"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column gap-4 p-4 p-lg-5 position-relative z-1">
                                     <div class="d-flex flex-column gap-4">
                                         <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">AI Integration</p>
                                         <h3 class="mb-0 text-white">Custom LLM-powered tools and agents deployed inside
@@ -220,10 +232,13 @@
                             </div>
                         </div>
                         <div class="col-lg-8 d-flex align-items-stretch">
-                            <div class="card bg-light position-relative w-100" data-aos="fade-up" data-aos-delay="400"
-                                data-aos-duration="1000">
+                            <div class="card bg-light position-relative overflow-hidden w-100" data-aos="fade-up"
+                                data-aos-delay="400" data-aos-duration="1000">
+                                <img src="./assets/images/about/real-time.png" alt="Real-Time"
+                                    class="position-absolute top-0 end-0 opacity-50 about-card-img-masked-lg"
+                                    loading="lazy">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-between gap-14 gap-lg-15 p-4 p-lg-5">
+                                    class="card-body d-flex flex-column justify-content-between gap-14 gap-lg-15 p-4 p-lg-5 position-relative z-1">
                                     <div class="d-flex flex-column gap-4">
                                         <p class="mb-0 text-uppercase fw-medium fs-3 text-muted">Real-Time Intelligence
                                         </p>
