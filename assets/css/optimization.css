@@ -219,7 +219,7 @@
    Owl Carousel Testimonial Styles
    ========================================= */
 
-   .testimonial-carousel .owl-stage {
+.testimonial-carousel .owl-stage {
     display: flex;
 }
 
@@ -267,3 +267,201 @@
 .w-fit {
     width: fit-content;
 }
+
+/* =========================================
+   Gradient Fade to White Effect
+   ========================================= */
+
+.bg-gradient-shaph::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0.9) 70%, #ffffff 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* About Us Image Utilities - Extracted from inline styles */
+.about-card-img-masked {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to left, black, transparent);
+    -webkit-mask-image: linear-gradient(to left, black, transparent);
+}
+
+.about-card-img-performance {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transform: translate(50px, -50px);
+}
+
+.about-card-img-ai {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(60px, -60px);
+}
+
+.about-card-img-full {
+    object-fit: cover;
+}
+
+
+.about-card-img-masked-lg {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to left, black, transparent);
+    -webkit-mask-image: linear-gradient(to left, black, transparent);
+}
+
+
+/* Staggered Grid Adjustment for About Us */
+@media (min-width: 992px) {
+    .about-stagger-left {
+        margin-top: -1.5rem;
+        /* Moves left column higher */
+    }
+
+    .about-stagger-right {
+        margin-top: 3rem;
+        /* Moves right column lower */
+    }
+}
+
+
+/* Enforce equal size for About Us feature cards */
+.about-feature-card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =========================================
+   Diagonal Rounding Utility
+   ========================================= */
+
+.rounded-diagonal {
+    border-radius: 4rem 0 4rem 0; /* Top-Left and Bottom-Right rounded */
+}
+
+.rounded-diagonal-inverse {
+    border-radius: 0 4rem 0 4rem; /* Top-Right and Bottom-Left rounded */
+}
+/* =========================================
+   Service Page Image Consistency
+   ========================================= */
+
+.service-section-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .service-section-img {
+        height: 450px;
+    }
+}
+
+/* =========================================
+   Draftr Aesthetics (Modern Tech)
+   ========================================= */
+
+:root {
+    --draftr-bg: #FFFFFF;
+    --draftr-text-main: #101011;
+    --draftr-text-sub: #606266;
+    --draftr-card-bg: #000000;
+    --draftr-radius: 40px;
+}
+
+.draftr-h1 {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--draftr-text-main);
+}
+
+@media (min-width: 992px) {
+    .draftr-h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.draftr-h2 {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    color: var(--draftr-text-main);
+}
+
+.draftr-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    color: var(--draftr-text-sub);
+    font-weight: 450;
+    line-height: 1.6;
+}
+
+.draftr-rounded {
+    border-radius: var(--draftr-radius) !important;
+}
+
+.draftr-img-container {
+    border-radius: var(--draftr-radius);
+    overflow: hidden;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
+}
+
+.draftr-glow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.draftr-glow-container::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(100, 100, 255, 0.08) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.draftr-glow-container::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(160, 100, 255, 0.08) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.draftr-card-dark {
+    background-color: #111;
+    color: #fff;
+    border-radius: var(--draftr-radius);
+    padding: 3rem;
+}
+
+.draftr-number {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
