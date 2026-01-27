@@ -24489,7 +24489,6 @@ fieldset:disabled .btn {
 
 .bg-gradient-shaph {
   position: relative;
-  overflow: hidden;
 }
 
 .bg-gradient-shaph::before {
@@ -24667,8 +24666,6 @@ ul {
 
 .font-instrument {
   font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: italic;
 }
 
 .text-opacity-70 {
