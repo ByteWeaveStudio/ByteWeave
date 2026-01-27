@@ -260,15 +260,27 @@
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <div class="rounded-circle bg-primary-subtle p-3 text-primary d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:target-linear" class="fs-4"></iconify-icon>
+                                    <iconify-icon icon="solar:document-text-linear" class="fs-4"></iconify-icon>
                                 </div>
-                                <h5>Production-First Mindset</h5>
-                                <p class="text-muted mb-0">We design for edge cases from day one. Real-world documents
-                                    are messy - our systems handle that.</p>
+                                <h5>Document Processing & OCR</h5>
+                                <p class="text-muted mb-0">Extract structured data from invoices, receipts, contracts,
+                                    IDs, and any document format with high accuracy.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="rounded-circle bg-warning-subtle p-3 text-warning d-inline-flex mb-3">
+                                    <iconify-icon icon="solar:videocamera-record-linear" class="fs-4"></iconify-icon>
+                                </div>
+                                <h5>Video Surveillance & Analytics</h5>
+                                <p class="text-muted mb-0">Real-time monitoring systems that detect events, track
+                                    objects, and generate actionable alerts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <div class="rounded-circle bg-success-subtle p-3 text-success d-inline-flex mb-3">
@@ -277,18 +289,6 @@
                                 <h5>Human-in-the-Loop</h5>
                                 <p class="text-muted mb-0">We build confidence scoring and review workflows so humans
                                     verify edge cases, not babysit the system.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="rounded-circle bg-warning-subtle p-3 text-warning d-inline-flex mb-3">
-                                    <iconify-icon icon="solar:shield-check-linear" class="fs-4"></iconify-icon>
-                                </div>
-                                <h5>Accuracy Over Speed</h5>
-                                <p class="text-muted mb-0">We prioritize accuracy metrics that matter for your business,
-                                    not just benchmark scores.</p>
                             </div>
                         </div>
                     </div>
@@ -345,53 +345,113 @@
 
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card h-100 border-0 shadow-sm text-center bg-light-subtle">
                             <div class="card-body p-4">
-                                <h6 class="text-uppercase text-muted small mb-3">OCR & Document AI</h6>
-                                <div class="d-flex flex-column gap-2">
-                                    <span>Google Document AI</span>
-                                    <span>AWS Textract</span>
-                                    <span>Azure Form Recognizer</span>
-                                    <span>Tesseract / EasyOCR</span>
+                                <h6 class="text-uppercase text-muted small mb-4">OCR & Document AI</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:google-cloud" class="fs-5"></iconify-icon>
+                                        <span>Google Document AI</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:aws" class="fs-5"></iconify-icon>
+                                        <span>AWS Textract</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:microsoft-azure" class="fs-5"></iconify-icon>
+                                        <span>Azure Form Recognizer</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="solar:document-text-bold-duotone"
+                                            class="fs-5 text-dark"></iconify-icon>
+                                        <span>Tesseract / EasyOCR</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card h-100 border-0 shadow-sm text-center bg-light-subtle">
                             <div class="card-body p-4">
-                                <h6 class="text-uppercase text-muted small mb-3">Deep Learning</h6>
-                                <div class="d-flex flex-column gap-2">
-                                    <span>PyTorch / TensorFlow</span>
-                                    <span>OpenCV</span>
-                                    <span>YOLO / Detectron2</span>
-                                    <span>Hugging Face Vision</span>
+                                <h6 class="text-uppercase text-muted small mb-4">Deep Learning</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:pytorch-icon" class="fs-5"></iconify-icon>
+                                        <span>PyTorch</span>
+                                        <span class="text-muted small">/</span>
+                                        <iconify-icon icon="logos:tensorflow" class="fs-5"></iconify-icon>
+                                        <span>TF</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:opencv" class="fs-5"></iconify-icon>
+                                        <span>OpenCV</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="fluent:eye-tracking-24-filled"
+                                            class="fs-5 text-dark"></iconify-icon>
+                                        <span>YOLO / Detectron2</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:hugging-face-icon" class="fs-5"></iconify-icon>
+                                        <span>Hugging Face</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card h-100 border-0 shadow-sm text-center bg-light-subtle">
                             <div class="card-body p-4">
-                                <h6 class="text-uppercase text-muted small mb-3">Video Analytics</h6>
-                                <div class="d-flex flex-column gap-2">
-                                    <span>NVIDIA DeepStream</span>
-                                    <span>OpenVINO</span>
-                                    <span>MediaPipe</span>
-                                    <span>FFmpeg / GStreamer</span>
+                                <h6 class="text-uppercase text-muted small mb-4">Video Analytics</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:nvidia" class="fs-5"></iconify-icon>
+                                        <span>NVIDIA DeepStream</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:intel" class="fs-5"></iconify-icon>
+                                        <span>OpenVINO</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:google-icon" class="fs-5"></iconify-icon>
+                                        <span>MediaPipe</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="solar:videocamera-record-bold-duotone"
+                                            class="fs-5 text-dark"></iconify-icon>
+                                        <span>FFmpeg / GStreamer</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card h-100 border-0 shadow-sm text-center bg-light-subtle">
                             <div class="card-body p-4">
-                                <h6 class="text-uppercase text-muted small mb-3">Infrastructure</h6>
-                                <div class="d-flex flex-column gap-2">
-                                    <span>AWS / GCP / Azure</span>
-                                    <span>Docker / Kubernetes</span>
-                                    <span>NVIDIA Triton</span>
-                                    <span>Edge Devices (Jetson)</span>
+                                <h6 class="text-uppercase text-muted small mb-4">Infrastructure</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:aws" class="fs-5"></iconify-icon>
+                                        <iconify-icon icon="logos:google-cloud" class="fs-5"></iconify-icon>
+                                        <iconify-icon icon="logos:microsoft-azure" class="fs-5"></iconify-icon>
+                                        <span>Cloud</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:docker-icon" class="fs-5"></iconify-icon>
+                                        <span>Docker</span>
+                                        <span class="text-muted small">/</span>
+                                        <iconify-icon icon="logos:kubernetes" class="fs-5"></iconify-icon>
+                                        <span>K8s</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="logos:nvidia" class="fs-5"></iconify-icon>
+                                        <span>Trinton Inference</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <iconify-icon icon="solar:cpu-bold-duotone"
+                                            class="fs-5 text-dark"></iconify-icon>
+                                        <span>Edge Devices</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -400,76 +460,7 @@
             </div>
         </section>
 
-        <!-- What We Can Build -->
-        <section class="py-10 py-lg-12" id="capabilities">
-            <div class="container">
-                <div class="row justify-content-center mb-10">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mb-4">What We Can <em class="font-instrument">Build</em></h2>
-                        <p class="lead text-muted">Computer vision solutions tailored to your industry needs.</p>
-                    </div>
-                </div>
 
-                <div class="row g-4">
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm card-accent-primary">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3">Document Processing & OCR</h5>
-                                <p class="text-muted mb-3">Extract structured data from invoices, receipts, contracts,
-                                    IDs, and any document format with high accuracy.</p>
-                                <ul class="text-muted small mb-0 ps-3">
-                                    <li>Invoice and receipt extraction</li>
-                                    <li>ID verification systems</li>
-                                    <li>Contract analysis</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm card-accent-success">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3">Video Surveillance & Analytics</h5>
-                                <p class="text-muted mb-3">Real-time monitoring systems that detect events, track
-                                    objects, and generate actionable alerts.</p>
-                                <ul class="text-muted small mb-0 ps-3">
-                                    <li>Footfall counting</li>
-                                    <li>Incident detection</li>
-                                    <li>Zone monitoring</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm card-accent-warning">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3">Object Detection & Classification</h5>
-                                <p class="text-muted mb-3">Custom models that identify and classify objects specific to
-                                    your domain and use case.</p>
-                                <ul class="text-muted small mb-0 ps-3">
-                                    <li>Product recognition</li>
-                                    <li>Defect detection</li>
-                                    <li>Inventory counting</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="card h-100 border-0 shadow-sm card-accent-info">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3">Image Quality & Verification</h5>
-                                <p class="text-muted mb-3">Systems that validate image quality, detect tampering, and
-                                    verify authenticity.</p>
-                                <ul class="text-muted small mb-0 ps-3">
-                                    <li>Document authenticity checks</li>
-                                    <li>Image quality scoring</li>
-                                    <li>Face matching</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!--  CTA -->
         <section class="py-10 py-lg-12 py-xl-13" id="cta">
