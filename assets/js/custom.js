@@ -18,18 +18,35 @@ $(function () {
     });
 
 
-    // Count
-    $('.count').each(function () {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 1000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
+    // Count — animate when the counters scroll into view
+    const counters = document.querySelectorAll(".count");
+    if (counters.length) {
+        const animateCount = (el) => {
+            const target = parseInt(el.textContent, 10) || 0;
+            $(el).prop("Counter", 0).animate({
+                Counter: target
+            }, {
+                duration: 1000,
+                easing: "swing",
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        };
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateCount(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.6 });
+            counters.forEach((el) => observer.observe(el));
+        } else {
+            counters.forEach(animateCount);
+        }
+    }
 
 
     // ScrollToTop
@@ -59,28 +76,30 @@ $(function () {
         once: true,
     });
 
-    // Testimonial Owl Carousel
-    $('.testimonial-carousel').owlCarousel({
-        loop: true,
-        rewind: false,
-        margin: 24,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        autoplaySpeed: 800,
-        smartSpeed: 800,
-        slideBy: 1,
-        dotsEach: 1,
-        dots: true,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            992: {
-                items: 2
+    // Testimonial Owl Carousel (index only — the plugin is not loaded elsewhere)
+    const $testimonials = $('.testimonial-carousel');
+    if ($testimonials.length && typeof $.fn.owlCarousel === "function") {
+        $testimonials.owlCarousel({
+            loop: true,
+            rewind: false,
+            margin: 24,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            autoplaySpeed: 800,
+            smartSpeed: 800,
+            slideBy: 1,
+            dotsEach: 1,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                992: {
+                    items: 2
+                }
             }
-        }
-    });
+        });
+    }
 });
-

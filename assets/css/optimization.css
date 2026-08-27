@@ -449,3 +449,10 @@
     letter-spacing: -0.03em;
 }
 
+
+/* Readability: Bootstrap's default secondary text (rgba gray at .75 alpha) fell below
+   WCAG AA on the site's white and pastel-subtle surfaces. #67686a holds >=4.5:1 on all of them. */
+:root,
+[data-bs-theme=light] {
+  --bs-secondary-color: #67686a;
+}

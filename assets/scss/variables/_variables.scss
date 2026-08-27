@@ -188,6 +188,8 @@ $line-height-lg: 2 !default;
 // Body
 $body-bg: $white !default;
 $body-color: $gray-400 !default;
+// Secondary text (.text-muted etc.): must hold >=4.5:1 on white and the *-subtle pastels
+$body-secondary-color: #67686a !default;
 
 // Heading
 $headings-color: $dark !default;
